@@ -1,0 +1,83 @@
+<!-- 
+CS316 program 1
+Initial Author: Paul Piwowarski 2014/09
+Modifications: Roxanne Coburn 2016/10
+
+Winning percentages around 50%
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    	<title>Blackjack by Roxanne Coburn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Open+Sans:400,600" rel="stylesheet">
+        <script src="blackjack.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <div class = " text-box">
+            <p id="title" align=center>Blackjack</p>
+            <p id="subtitle"> By Roxanne Coburn</p>
+        </div>
+        
+            <div class = "border">
+                <div class="top-bar">
+                    <p id="reset" onclick = "reset()"> Reset</p>
+                    <p id="run" onclick = "run1000times()"> Run 1000 Times</p>
+                </div>
+            
+                <div class = "cards-box">
+                  <p id="header" align=center>Dealer's Cards</p>
+                
+                   <div class = "cards-space" id = "dealer-space"> </div>
+                    
+                    <p id="header" align=center> My Cards</p>
+                
+                    <div class = "cards-space" id = "my-space"> </div>
+                
+                
+                </div>
+              
+                
+                <div class = "score-box">
+                    <p id = "score-headers">
+                        Dealer's Score:
+                    </p>
+                    <div class = "scores" id = "dealer-score"> 0 </div>
+                    <p id = "score-headers">
+                        My Score:
+                    </p>
+                    <div class = "scores" id = "my-score"> 0 </div>
+                       <p id = "score-headers">
+                        My Win %:
+                    </p>
+                    <div class = "scores" id = "win-percentage"> 0 </div>
+                </div>
+                
+                <div class = "button-box">
+                    <div class = "button" id = "shuffle" onclick = "shuffle()">
+                        Shuffle!
+                    </div>
+                    <div class = "button" id = "deal" onclick = "deal(1)">
+                        Deal!
+                    </div>
+                    <div class = "button" id ="hit" onclick = "hit(1)">
+                        Hit!
+                    </div>
+                   
+                    <div class = "button" id = "stay" onclick = "stay(1)">
+                        Stay!
+                    </div>
+                    
+                </div>
+               
+            </div>
+
+    </body>
+</html>
